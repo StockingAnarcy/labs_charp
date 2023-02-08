@@ -7,14 +7,14 @@ namespace lab1
         static void Main(string[] args)
         {
             Func<Action<float, float>, bool> func = GetTrue; //создание делегата 
-            Action<float, float> action = Draw; //инициализация делегата
+            Action<float, float> action = Print; //инициализация делегата
             func.Invoke(action); //вызов делегата
             func = GetFalse; // инициализация делегата
             func.Invoke(action); //вызов делегата
 
         }
 
-        static void Draw(float x, float y) //метод вывода на экран
+        static void Print(float x, float y) //метод вывода на экран
         {
             Console.WriteLine($"{x} and {y}");
 
