@@ -14,19 +14,19 @@ namespace lab1
 
         }
 
-        static void Print(float x, float y) //метод вывода на экран
+        static void Draw(float x, float y) //метод вывода на экран
         {
             Console.WriteLine($"{x} and {y}");
 
         }
-        static bool GetTrue(Action<float, float> draw) //true
+        static bool GetTrue(Action<string, string> draw) //true
         {
-            draw.Invoke(1.33f, 8.17f);
+            draw.Invoke("сиси", "попы");
             return true;
         }
-        static bool GetFalse(Action<float, float> draw) //false
+        static bool GetFalse(Action<string, string> draw) //false
         {
-            draw.Invoke(0, 35.177f);
+            draw.Invoke("booba", "ass");
             return false;
         }
 
