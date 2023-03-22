@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace lab8
+namespace lab9
 {
     class Program
     {
@@ -18,11 +18,11 @@ namespace lab8
 
         static void MaxValue()
         {
-            int[,] massive = new int[5, 5];
+            int[,] massive = new int[6, 6];
             Random rand = new Random();
-            for (int j = 0; j < 5; j++)
+            for (int j = 0; j < 6; j++)
             {
-                for (int i = 0; i < 5; i++)
+                for (int i = 0; i < 6; i++)
                 {
                     massive[i, j] = rand.Next(0, 10);
                 }
